@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.dishes-form {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 8px 8px 24px 0px rgba(128, 128, 128, 0.5);
+    border-radius: 10px;
+    width: 230px;
+
+    .container-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .empty-state {
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+      }
+  
+      .submit-button {
+        width: 100px;
+        margin-top: 15px;
+        padding: 5px 30px;
+        font-weight: 700;
+        color: #ce1125;
+        text-transform: uppercase;
+        border: 3px solid #ce1125;
+        border-bottom-left-radius: 30% 100%;
+        border-bottom-right-radius: 30% 100%;
+        border-top-left-radius: 30% 100%;
+        border-top-right-radius: 30% 100%;
+        background-color: transparent;
+        cursor: pointer;
+        line-height: 20px;
+          
+        &:hover {
+          border: 3px solid #000;
+          color: #000;
+        }
+          
+        &:disabled {
+          color: rgb(156, 156, 156);
+          border: 3px solid rgb(229, 229, 229);
+          cursor: not-allowed;
+          background-color: rgb(229, 229, 229);
+        }
+      }
+    }
+
+    // .empty-state {
+    //   text-align: center;
+    //   font-family: 'Ubuntu', sans-serif;
+    // }
+
+    // .submit-button {
+    //   align-self: center;
+    //   width: 100px;
+    //   margin-top: 15px;
+    //   padding: 5px 30px;
+    //   font-weight: 700;
+    //   color: #ce1125;
+    //   text-transform: uppercase;
+    //   border: 3px solid #ce1125;
+    //   border-bottom-left-radius: 30% 100%;
+    //   border-bottom-right-radius: 30% 100%;
+    //   border-top-left-radius: 30% 100%;
+    //   border-top-right-radius: 30% 100%;
+    //   background-color: transparent;
+    //   cursor: pointer;
+    //   line-height: 20px;
+        
+    //   &:hover {
+    //     border: 3px solid #000;
+    //     color: #000;
+    //   }
+        
+    //   &:disabled {
+    //     color: rgb(156, 156, 156);
+    //     border: 3px solid rgb(229, 229, 229);
+    //     cursor: not-allowed;
+    //     background-color: rgb(229, 229, 229);
+    //   }
+    // }
+}

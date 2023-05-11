@@ -1,11 +1,12 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://localhost:60001",
+  baseURL: "https://umzzcc503l.execute-api.us-west-2.amazonaws.com",
   headers: {
     "Content-type": "application/json",
     "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Methods": "GET, PUT, POST, PATCH, DELETE",
+    "Access-Control-Allow-Headers": "X-Requested-With",
+    "Access-Control-Allow-Methods": "GET, POST",
   },
 });
 
