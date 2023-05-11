@@ -1,0 +1,25 @@
+{
+    "form": {
+      "title": "Strona Formularza",
+      "name": "Nazwa dania",
+      "preparation_time": "Czas przygotowania",
+      "type": "Typ dania",
+      "pizza": "Pizza",
+      "soup": "Zupa",
+      "sandwich": "Kanapka",
+      "no_of_slices": "Slices",
+      "diameter": "Diameter",
+      "spiciness_scale": "Spiciness Scale (1-10)",
+      "slices_of_bread": "Slices Of Bread",
+      "select_empty": "Wybierz typ dania, by zakończyć zamówienie",
+      "button": "Zapisz"
+    },
+    "notFound": {
+      "title": "Not Found Page",
+      "button": "Wróć"
+    },
+    "footer": {
+      "footer": "Made with \u2764\uFE0F by Marta Probierz"
+    }
+  }
+  

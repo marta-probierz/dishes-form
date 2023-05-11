@@ -11,11 +11,13 @@ import {
   Grid 
 } from '@material-ui/core/';
 import Container from '@mui/material/Container';
+import i18n from "../i18n";
 
 import sendDataToApi from '../service/sendDataToApi';
 import normalizePreparationTime from '../utils/normalizePreparationTime';
 import { Footer } from "../components/Footer";
 import '../style/FormPage.style.scss';
+import { Languages } from "../components/Language";
 
 
 const validate = values => {
@@ -61,29 +63,36 @@ const renderFromHelper = ({ touched, error }) => {
   }
 }
 
-const renderSelectField = ({
+const RenderSelectField = ({
   input,
   label,
   meta: { touched, error },
   children,
   ...custom
-}) => (
-  <FormControl error={touched && error} style={{minWidth: 197}}>
-    <InputLabel htmlFor="type-native-simple">Dish Type</InputLabel>
-    <Select
-      native
-      {...input}
-      {...custom}
-      inputProps={{
-        name: 'type',
-        id: 'type-native-simple'
-      }}
-    >
-      { children }
-    </Select>
-    {renderFromHelper({ touched, error })}
-  </FormControl>
-)
+}) => {
+  const { t } = useTranslation();
+  return (
+    <FormControl error={touched && error} style={{minWidth: 197}}>
+        <InputLabel htmlFor="type-native-simple">{t`form.type`}</InputLabel>
+        <Select
+          native
+          {...input}
+          {...custom}
+          inputProps={{
+            name: 'type',
+            id: 'type-native-simple'
+          }}
+        >
+          { children }
+        </Select>
+        {renderFromHelper({ touched, error })}
+      </FormControl>
+  )
+}
+
+const changeLanguage = (lng) => {
+  i18n.changeLanguage(lng);
+};
 
 const FormPage = props => {
   const { t } = useTranslation();
@@ -99,6 +108,7 @@ const FormPage = props => {
   return (
     <>
     <Container maxWidth="xl" sx={{ bgcolor: '#cfe8fc', height: '98vh' }}>
+    <Languages onClickUS={() => changeLanguage('en')} onClickPL={() => changeLanguage('pl')} />
       <Grid container justifyContent="center" alignItems="center" style={{ height: '90vh' }}>
       <form className="dishes-form" onSubmit={handleSubmit(sendDataToApi)}>
         <div className="container-main">
@@ -121,7 +131,7 @@ const FormPage = props => {
           <Field
             classes={classes}
             name="type"
-            component={renderSelectField}
+            component={RenderSelectField}
             label={t`form.type`}
             value={selected.type}
             onChange={HandleType}
