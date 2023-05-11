@@ -98,7 +98,7 @@ const FormPage = props => {
   
   return (
     <>
-    <Container maxWidth="xl" sx={{ bgcolor: '#cfe8fc', height: '100vh' }}>
+    <Container maxWidth="xl" sx={{ bgcolor: '#cfe8fc', height: '98vh' }}>
       <Grid container justifyContent="center" alignItems="center" style={{ height: '90vh' }}>
       <form className="dishes-form" onSubmit={handleSubmit(sendDataToApi)}>
         <div className="container-main">
