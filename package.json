@@ -2,6 +2,7 @@
   "name": "dishes-form",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://umzzcc503l.execute-api.us-west-2.amazonaws.com",
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
@@ -29,7 +30,7 @@
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
-    "react-toastify": "^9.0.7",
+    "react-toastify": "^9.1.2",
     "redux": "^4.2.1",
     "redux-form": "^8.3.10",
     "sass": "^1.62.1",
