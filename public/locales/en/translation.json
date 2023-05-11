@@ -1,8 +1,23 @@
 {
   "form": {
-    "title": "Form Page"
+    "title": "Form Page",
+    "name": "Dish Name",
+    "preparation_time": "Preparation Time",
+    "type": "Dish Type",
+    "pizza": "Pizza",
+    "soup": "Soup",
+    "sandwich": "Sandwich",
+    "no_of_slices": "Slices",
+    "diameter": "Diameter",
+    "spiciness_scale": "Spiciness Scale (1-10)",
+    "slices_of_bread": "Slices Of Bread",
+    "select_empty": "Select a type to finish the order",
+    "button": "Save"
   },
   "notFound": {
     "title": "Not Found Page"
+  },
+  "footer": {
+    "footer": "Made with \u2764\uFE0F by Marta Probierz"
   }
 }
