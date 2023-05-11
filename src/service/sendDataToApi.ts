@@ -1,14 +1,20 @@
-import axios from "../axios/instanceAxios";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 const sendDataToApi = async (formData) => {
-    alert(JSON.stringify(formData, null, 2));
-    try {
-      const response = await axios.post("/dishes", formData);
-      const data = response.data;
-      console.log(data);
-    } catch (error) {
-      console.log(error);
+  try {
+    const response = await axios.post("/dishes", formData);
+    const data = response.data;
+    if (response.status === 200) {
+      toast.success("Success");
+    } else {
+      toast.error("Error");
     }
-  };
+    console.log(data);
+  } catch (error) {
+    toast.error("Error");
+    console.log(error);
+  }
+};
 
-  export default sendDataToApi;
+export default sendDataToApi;
