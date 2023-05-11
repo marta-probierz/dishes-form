@@ -15,7 +15,8 @@
     "button": "Save"
   },
   "notFound": {
-    "title": "Not Found Page"
+    "title": "Not Found Page",
+    "button": "Back"
   },
   "footer": {
     "footer": "Made with \u2764\uFE0F by Marta Probierz"
