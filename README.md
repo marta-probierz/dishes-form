@@ -3,7 +3,7 @@
   <img src="https://github.com/marta-probierz/dishes-form/assets/75137091/45d95e7e-4465-4831-915b-4e8cdb3ede85" alt="pizza" height="200px" />
 </div>
 
-### [View Demo]()
+### [View Demo](https://dishes-form-five.vercel.app/)
 
 #### Author:
 - [Marta Probierz](https://github.com/marta-probierz)
@@ -27,6 +27,12 @@ The goal of the project was to provide a "Dishes Form" application that allows u
 - TypeScript
 - Material UI
 - SASS
+
+#### :pencil2: Additional information
+The Prettier library for code formatting was also used. This library is a great tool that catches syntax errors, automatically corrects lines of code according to a defined configuration.
+
+### :rocket: API
+[API](https://umzzcc503l.execute-api.us-west-2.amazonaws.com/dishes/)
 
 ### 🎯 Features
 - Form
