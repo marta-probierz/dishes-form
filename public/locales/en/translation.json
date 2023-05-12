@@ -12,7 +12,16 @@
     "spiciness_scale": "Spiciness Scale (1-10)",
     "slices_of_bread": "Slices Of Bread",
     "select_empty": "Select a type to finish the order",
-    "button": "Save"
+    "button": "Save",
+    "validation": {
+      "required": "This field is required",
+      "min": "Enter at least 3 characters",
+      "spiciness_scale": "Enter a number from 1 to 10"
+    },
+    "toast": {
+      "success": "Your order was successfully added",
+      "error": "Something went wrong"
+    }
   },
   "notFound": {
     "title": "Not Found Page",

@@ -7,15 +7,24 @@
       "pizza": "Pizza",
       "soup": "Zupa",
       "sandwich": "Kanapka",
-      "no_of_slices": "Slices",
-      "diameter": "Diameter",
-      "spiciness_scale": "Spiciness Scale (1-10)",
-      "slices_of_bread": "Slices Of Bread",
+      "no_of_slices": "Kawałki",
+      "diameter": "Średnica",
+      "spiciness_scale": "Pikantność (1-10)",
+      "slices_of_bread": "Kromki chleba",
       "select_empty": "Wybierz typ dania, by zakończyć zamówienie",
-      "button": "Zapisz"
+      "button": "Zapisz",
+      "validation": {
+        "required": "Pole obowiązkowe",
+        "min": "Wpisz minimum 3 znaki",
+        "spiciness_scale": "Wpisz cyfrę od 1 do 10"
+      },
+      "toast": {
+        "success": "Twoje zamówienie zostało dodane",
+        "error": "Coś poszło nie tak"
+      }
     },
     "notFound": {
-      "title": "Not Found Page",
+      "title": "Nie znaleziono strony",
       "button": "Wróć"
     },
     "footer": {
